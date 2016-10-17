@@ -11,4 +11,9 @@ describe('greeter', function() {
     var greeting = greet();
     assert.equal(greeting, 'Hello friend, how you doing?');
   });
+
+  it('greets using Tim', function() {
+    var greeting = greet('Tim');
+    assert.equal(greeting, 'Hello Tim, you rock!!');
+  });
 });
