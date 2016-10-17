@@ -1,0 +1,25 @@
+{
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "greet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchasepdx/greeting-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dchasepdx/greeting-app/issues"
+  },
+  "bin": {
+    "greeting": "greet.js"
+  },
+  "homepage": "https://github.com/dchasepdx/greeting-app#readme",
+  "devDependencies": {
+    "eslint": "^3.8.1"
+  }
+}
