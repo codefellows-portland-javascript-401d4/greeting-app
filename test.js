@@ -13,4 +13,9 @@ describe('greeter', function() {
         assert.equal(greeting, 'hello friend');
     });
 
+    it('greets with arg passed from command line', function() {
+        var greeting = greet();
+        assert.equal(greeting, 'hello andy');
+    });
+
 });
