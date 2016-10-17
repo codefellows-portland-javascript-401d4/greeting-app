@@ -13,9 +13,14 @@ describe('greeter', function() {
         assert.equal(greeting, 'hello friend');
     });
 
-    it('greets with arg passed from command line', function() {
-        var greeting = greet();
-        assert.equal(greeting, 'hello andy');
+    it('greets with special greeting when name is Andy', function() {
+        var greeting = greet('Andy');
+        assert.equal(greeting, "Heyyyy, what's up, buddy?");
     });
+
+    // it('greets with arg passed from command line', function() {
+    //     var greeting = greet();
+    //     assert.equal(greeting, 'hello andy');
+    // });
 
 });
