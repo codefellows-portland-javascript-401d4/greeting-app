@@ -1,5 +1,6 @@
 var assert = require('assert');
 var greet = require('./greet');
+var esync = require('child_process').execSync;
 
 describe('greeter', function() {
 
@@ -18,9 +19,9 @@ describe('greeter', function() {
         assert.equal(greeting, "Heyyyy, what's up, buddy?");
     });
 
-    // it('greets with arg passed from command line', function() {
-    //     var greeting = greet();
-    //     assert.equal(greeting, 'hello andy');
-    // });
+    it('greets with arg passed from command line', function() {
+        var greeting = esync('node greet.js billybob', {encoding: 'utf-8'});
+        assert.equal(greeting, 'hello billybob\n');
+    });
 
 });
