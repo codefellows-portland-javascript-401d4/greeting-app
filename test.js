@@ -1,4 +1,4 @@
-//require the module
+//require the module 
 var assert = require('assert');
 //require the greet file adn provide path to file
 var greet = require('./greet');
@@ -17,12 +17,4 @@ describe ('greeter', function() {
         assert.equal(greeting, 'hello friend');
     });
     
-    //another test, just for fun!
-    describe('some other functionality', function() {
-
-        it('this other test ...', function() {
-            assert.equal(2,2);
-        });
-    });
-
 });
