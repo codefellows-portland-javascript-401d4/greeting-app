@@ -9,8 +9,8 @@ describe('greeter', function() {
     });
 
     it('greets with "friend" when no name given', function() {
-        var greeting = greet('');
-        assert.equal(greeting, 'hello tester');
+        var greeting = greet();
+        assert.equal(greeting, 'hello friend');
     });
 
 });
