@@ -12,5 +12,3 @@ prompts.question('What is the airspeed of a swallow?', function(swallowSpeed) {
     }
     process.exit();
 });
-
-module.exports = readLine;
