@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/DrewStock/greeting-app.git"
   },
-  "author": "Drew Stock",
+  "author": "DrewStock",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DrewStock/greeting-app/issues"
