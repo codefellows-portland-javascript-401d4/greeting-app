@@ -5,6 +5,7 @@ var greet = function(name, emoji) {
     
   return 'hello ' + name + ' ' + emoji;
 };
-console.log(greet(process.argv[2], emoji.get(process.argv[3])));
+
+console.log(greet(process.argv[2], emoji.get(process.argv.pop())));
 module.exports = greet;
 
