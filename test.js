@@ -9,22 +9,25 @@ describe('greeter', function() {
 
 	it('greets with name', function() {
 		var greeting = greet('tester');
-		assert.equal(greeting, 'hello tester');
+		assert.equal(greeting, 'Hello tester!');
 	});
 
 	it('greets with "friend" when no name given', function() {
 		var greeting = greet();
-		assert.equal(greeting, 'hello friend');
+		assert.equal(greeting, 'Hello friend!');
 	});
 
 	it('tests input', function() {
-		var greeting = eSync('node greet.js tyler', {encoding: 'utf-8'});
-		assert.equal(greeting, 'hello tyler\n');
+		var regEx = /^Hello/g;
+		// var pokeArray = ['charizard', 'pikachu', 'gyarados', 'onix'];
+		// var randomPokemon = Math.floor(Math.random() * pokeArray.length);
+		var greeting = eSync('node greet.js Tyler', {encoding: 'utf-8'});
+		assert.match(greeting, regEx);
 	});
 
 	it('includes a link', function() {
-		var pokeArray = ['charizard', 'pikachu', 'gyrados', 'onix'];
-		var randomPokemon = Math.floor(Math.random() * pokeArray.length + 1);
+		var pokeArray = ['charizard', 'pikachu', 'gyarados', 'onix'];
+		var randomPokemon = Math.floor(Math.random() * pokeArray.length);
 		var regEx = /^http:/g;
 		assert.match(pokemonGif(pokeArray[randomPokemon]), regEx);
 	});
