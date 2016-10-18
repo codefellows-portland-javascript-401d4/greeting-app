@@ -19,7 +19,6 @@ describe('index', function() {
 
   it('greets a console user by the name provided', function() {
     // call the index with provided parameters
-
     // Grab the last argument passed to this script
     var name = process.argv[(process.argv.length - 1)];
     // If it contains a .js, it's a path, so don't use it. Else, assume it's a name.
@@ -30,5 +29,15 @@ describe('index', function() {
       .execSync('node index.js ' + '"' + name + '"');
     var greeting = child.toString();
     assert.equal(greeting, 'Hello ' + name + '!\n');
+  });
+
+  it('greets a user with the correct title', function() {
+    // find the salutation flags, test against correct titles
+    var name = process.argv[(process.argv.length - 1)];
+    var flag = process.argv[(process.argv.length - 2)];
+    var child = require('child_process')
+      .execSync('node index.js ' + flag + ' "' + name + '"');
+    var greeting = child.toString();
+    assert.equal(greeting, 'Hello Ms. Gloria!\n');
   });
 });
