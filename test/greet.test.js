@@ -52,6 +52,7 @@ describe('cmd-line-greeter', function() {
   });
 
   it('prints greeting with friend to terminal, asks for name, and responds if invoked with no argument', function(done) {
+    // Major thanks to Marty Nelson for help constructing and debugging this test!!!
     const child = cp.exec('node ./lib/greet.js');
     var step = 0;
     child.stdout.on('data', (actual) => {
