@@ -1,10 +1,12 @@
 const readline = require('readline');
+var cool = require('cool-ascii-faces');
 
 //in case does not work, you can still enter another name and this will print out
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
-    prompt: process.argv[2] ? 'hello ' + process.argv[2] + '\n' : 'hello\n'  
+    // prompt: process.argv[2] ? 'hello ' + process.argv.pop() + ' ' + cool() + '\n' : 'hello' + ' ' + cool() + '\n'
+    prompt: process.argv[2] ? 'hello ' + process.argv.pop() + '\n' : 'hello\n'  
 });
 
 function greet(name) { 
@@ -31,5 +33,6 @@ function greet(name) {
 
 rl.prompt();
 rl.close(); 
+
 
 module.exports = greet;

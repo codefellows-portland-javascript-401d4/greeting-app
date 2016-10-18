@@ -1,5 +1,5 @@
-var assert = require('assert');
-var greet = require('./greet');
+var assert = require('chai').assert;
+var greet = require('./lib/greet');
 var esync = require('child_process').execSync;
 
 describe('greeter', function() {
@@ -28,7 +28,7 @@ describe('greeter', function() {
     });
 
     it('this will return a prompt with your name in the console', function() {
-        var greeting = esync('node greet.js "Jane Doe"', {encoding: 'utf-8'});
+        var greeting = esync('node ./lib/greet.js "Jane Doe"', {encoding: 'utf-8'});
         assert.equal(greeting, 'hello Jane Doe\n');
     })
 });
