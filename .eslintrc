@@ -1,10 +1,13 @@
 {
    "settings": {
-    "ecmascript": 5
+    "ecmascript": 6
   },
   "ecmaFeatures": {
   },
   "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true,
     "browser": true,
     "jquery": true
   },
