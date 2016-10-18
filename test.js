@@ -26,7 +26,6 @@ describe('greeter', function() {
 describe('some other functionality', function() {
 
   it('this other test...', function() {
-    
     assert.equal(2,2);
   });
 });
