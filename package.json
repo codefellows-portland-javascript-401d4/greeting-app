@@ -1,0 +1,27 @@
+{
+  "name": "anholt-greeter",
+  "version": "1.0.0",
+  "description": "An interactive greeting generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha greeter.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GloriaAnholt/greeting-app.git"
+  },
+  "keywords": [
+    "console",
+    "greeting",
+    "salutations"
+  ],
+  "author": "Gloria Anholt",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/GloriaAnholt/greeting-app/issues"
+  },
+  "homepage": "https://github.com/GloriaAnholt/greeting-app#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
