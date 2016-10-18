@@ -12,6 +12,7 @@ For this assignment you will add the following:
   * Enhance your greeting features. 
     * Use at least one third-party npm library, example: add icon/art/emoji greeting
     * Add at least one new option to the greet function
+    * Add tests for new functionality
   * Automated build and development environent via npm scripts
   * changelog and semver "history":
     * the version from the previous lab is `v1.0.0`
@@ -23,14 +24,15 @@ The package.json file should include:
   * npm scripts (ex: test, build, watch, dev, start)
 
 The npm scripts should address:
-  * a task to run the tests
-  * running eslint
-  * watch functionality (only watches .js files) to run linting and testing
+  * run tests
+  * run eslint
+  * run lint and testing
+  * watch functionality (only watches .js files) to run testing
 
 ## Bonus **3pts**  
 Add to core library and cli:
 * solicit input and respond with second greeting that includes input.
-* Add appropriate cli and unit tests. 
+* Add appropriate system/integration and unit tests as appropriate. 
 
 ## Rubric:
 
