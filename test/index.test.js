@@ -5,24 +5,30 @@ var chai = require('chai');
 var sayHello = require('../greeter');
 var cmd = require('../index');
 
-// Grab the last argument passed to this script
-var args = process.argv[(process.argv.length - 1)];
-
-// If it contains a .js, it's a path, so don't use it. Otherwise, assume it's a name.
-if (args.indexOf('.js') > -1) {
-  args = '';
-}
-
-var child = require('child_process')
-  .execSync('node index.js ' + '"' + args + '"');
-
 
 describe('index', function() {
+  // Set-up all of the variables that will be used by each test!
 
-  it('greets a console user providing an empty string', function () {
-    // test that arguments taken in via the command line are processed correctly
+  it('greets a console user providing an empty string', function() {
+    // call the index with an empty string
+    var child = require('child_process')
+      .execSync('node index.js');
     var greeting = child.toString();
-    assert.equal(greeting, 'Hello' + args + '!\n');
+    assert.equal(greeting, 'Hello!\n');
   });
 
+  it('greets a console user by the name provided', function() {
+    // call the index with provided parameters
+
+    // Grab the last argument passed to this script
+    var name = process.argv[(process.argv.length - 1)];
+    // If it contains a .js, it's a path, so don't use it. Else, assume it's a name.
+    if (name.indexOf('.js') > -1) {
+      name = '';
+    }
+    var child = require('child_process')
+      .execSync('node index.js ' + '"' + name + '"');
+    var greeting = child.toString();
+    assert.equal(greeting, 'Hello ' + name + '!\n');
+  });
 });
