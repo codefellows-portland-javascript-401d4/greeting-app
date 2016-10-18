@@ -38,6 +38,27 @@ describe('index', function() {
     var child = require('child_process')
       .execSync('node index.js ' + flag + ' "' + name + '"');
     var greeting = child.toString();
-    assert.equal(greeting, 'Hello Ms. Gloria!\n');
+
+    switch(cmd) {
+      case 'Mr.':
+        assert.equal(greeting, 'Hello Mr. ' + name + '!\n');
+        break;
+      case 'Ms.':
+        assert.equal(greeting, 'Hello Ms. ' + name + '!\n');
+        break;
+      case 'Mrs.':
+        assert.equal(greeting, 'Hello Mrs. ' + name + '!\n');
+        break;
+      case 'Mx.':
+        assert.equal(greeting, 'Hello Mx. ' + name + '!\n');
+        break;
+      case 'Ind.':
+        assert.equal(greeting, 'Hello Ind. ' + name + '!\n');
+        break;
+      case 'Yo':
+        assert.equal(greeting, 'Hello Yo ' + name + '!\n');
+        break;
+    }
+
   });
 });
