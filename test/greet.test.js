@@ -1,6 +1,6 @@
 var assert = require('chai').assert;
 var greet = require('../lib/greet');
-var execSync = require('child_process').execSync;
+var cp = require('child_process');
 var emoji = require('node-emoji');
 
 describe('greet function', function() {
@@ -35,25 +35,35 @@ describe('cmd-line-greeter', function() {
 
   it('prints greeting with name to terminal if invoked with name as an argument', function() {
     var name = 'Penny';
-    var actual = execSync('node ./lib/greet.js ' + name);
+    var actual = cp.execSync('node ./lib/greet.js ' + name);
     assert.equal(actual.toString().trim(), 'Hello, ' + name); 
   });
 
   it('prints a hostile greeting to terminal if invoked with name and --type=hostile', function() {
     var name = 'Kripke';
-    var actual = execSync('node ./lib/greet.js ' + name + ' --type=hostile');
+    var actual = cp.execSync('node ./lib/greet.js ' + name + ' --type=hostile');
     assert.equal(actual.toString().trim(), 'Hello, ' + name + ', you scumbag low-life ' + emoji.get('rage'));
   });
 
   it('prints a hospitable greeting to terminal if invoked with name and --type=hospitable', function() {
     var name = 'Leonard';
-    var actual = execSync('node ./lib/greet.js ' + name + ' --type=hospitable');
+    var actual = cp.execSync('node ./lib/greet.js ' + name + ' --type=hospitable');
     assert.equal(actual.toString().trim(), 'Hello, ' + name + ', would you like a hot beverage? ' + emoji.get('coffee'));
   });
 
-  it('prints greeting with friend to terminal, asks for name, and responds if invoked with no argument', function() {
-    var actual = execSync('node ./lib/greet.js');
-    assert.equal(actual.toString().trim(), 'Hello, friend. What\'s your name?');
+  it('prints greeting with friend to terminal, asks for name, and responds if invoked with no argument', function(done) {
+    const child = cp.exec('node ./lib/greet.js');
+    var step = 0;
+    child.stdout.on('data', (actual) => {
+      if (step == 0) {
+        assert.equal(actual, 'Hello, friend. What\'s your name?');
+        step++;   
+        child.stdin.write('Tester\n');
+      }
+      else {
+        assert.equal(actual, 'Hello, Tester. Nice to meet you!\n');
+        done();        
+      }
+    });
   });
-
 });
