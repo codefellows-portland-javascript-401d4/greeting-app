@@ -7,9 +7,8 @@ function greet(name) {
 	return 'Hello ' + name + '!';
 }
 
-var pokeArray = ['charizard', 'pikachu', 'gyarados', 'onix'];
-var randomPokemon = Math.floor(Math.random() * pokeArray.length);
+var randomPokemon = Math.floor(Math.random() * 720 + 1);
 
-console.log(greet(process.argv[2]) + ' Here is your awesome pokemon gif!', pokemonGif(pokeArray[randomPokemon]));
+console.log(greet(process.argv[2]) + ' Here is your awesome pokemon gif!', pokemonGif(randomPokemon));
 
 module.exports = greet;

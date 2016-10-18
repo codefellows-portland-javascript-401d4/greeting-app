@@ -19,17 +19,14 @@ describe('greeter', function() {
 
 	it('tests input', function() {
 		var regEx = /^Hello/g;
-		// var pokeArray = ['charizard', 'pikachu', 'gyarados', 'onix'];
-		// var randomPokemon = Math.floor(Math.random() * pokeArray.length);
 		var greeting = eSync('node greet.js Tyler', {encoding: 'utf-8'});
 		assert.match(greeting, regEx);
 	});
 
 	it('includes a link', function() {
-		var pokeArray = ['charizard', 'pikachu', 'gyarados', 'onix'];
-		var randomPokemon = Math.floor(Math.random() * pokeArray.length);
+		var randomPokemon = Math.floor(Math.random() * 720 + 1);
 		var regEx = /^http:/g;
-		assert.match(pokemonGif(pokeArray[randomPokemon]), regEx);
+		assert.match(pokemonGif(randomPokemon), regEx);
 	});
 });
 
