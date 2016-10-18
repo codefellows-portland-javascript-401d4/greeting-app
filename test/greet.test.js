@@ -51,9 +51,9 @@ describe('cmd-line-greeter', function() {
     assert.equal(actual.toString().trim(), 'Hello, ' + name + ', would you like a hot beverage? ' + emoji.get('coffee'));
   });
 
-  it('prints greeting with friend to terminal if invoked with no argument', function() {
+  it('prints greeting with friend to terminal, asks for name, and responds if invoked with no argument', function() {
     var actual = execSync('node ./lib/greet.js');
-    assert.equal(actual.toString().trim(), 'Hello, friend'); 
+    assert.equal(actual.toString().trim(), 'Hello, friend. What\'s your name?');
   });
 
 });
