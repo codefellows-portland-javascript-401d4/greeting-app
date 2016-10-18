@@ -6,7 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- added Mocha and Chai as developer dependencies to allow for running tests.
 - tests to ensure the titles work properly.
+
 
 ## [1.1.0] - 2016-10-18
 ## Added
