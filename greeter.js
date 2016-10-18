@@ -20,7 +20,4 @@ function sayHello(name) {
   }
 }
 
-sayHello('Erica');
-sayHello();
-
 module.exports = sayHello;
