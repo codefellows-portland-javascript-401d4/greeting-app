@@ -1,8 +1,10 @@
 function greet(name) {
-    var greet = 'Hello, '
-    return greet + name + '!';
+    var name = process.argv.pop();
+    process.argv.push(name);
+    return('Hello, ' + name + '!')
 };
 
-greet(); 
+console.log(greet());
+greet();
 
 module.exports = greet;
