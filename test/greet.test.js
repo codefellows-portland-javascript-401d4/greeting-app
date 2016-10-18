@@ -33,7 +33,6 @@ describe('greet function', function() {
 
 describe('cmd-line-greeter', function() {
 
-
   it('prints greeting with name to terminal if invoked with name as an argument', function() {
     var name = 'Penny';
     var actual = execSync('node ./lib/greet.js ' + name);

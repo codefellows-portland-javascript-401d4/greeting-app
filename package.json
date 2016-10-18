@@ -4,7 +4,13 @@
   "description": "Greeting module that can be required as a module or run from the CLI",
   "main": "greet.js",
   "scripts": {
-    "test": "mocha"
+    "lint": "eslint **/*.js",
+    "pretest": "npm run lint",
+    "test": "mocha",
+    "build": "npm install",
+    "dev": "npm install --save-dev",
+    "watch": "npm run test -- -w",
+    "start": "node lib/greet.js"
   },
   "repository": {
     "type": "git",
