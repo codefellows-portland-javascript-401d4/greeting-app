@@ -16,8 +16,7 @@ construct a greeting from input parameters. (e.g. take a name as a parameter and
 You should write tests for the features of the greeting module.  
 
 Include
-- **.eslintrc** file in your repository
-- **travis.yaml** file so your PR pases Travis CI.  
+- **.eslintrc** file in your repository 
 
 Your submission should be a link to your pull request.  
 
