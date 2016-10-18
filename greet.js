@@ -1,5 +1,5 @@
 function greet(name) {
-    name = 'mon ami' || name;
+    name = name || 'mon ami';
     return 'Bonjour, ' + name;
 }
 module.exports = greet;
