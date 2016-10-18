@@ -13,23 +13,31 @@ cmd
   .option('-y, --yo', 'Yo')
   .parse(process.argv);
 
-var name = process.argv.slice(3).join(' ');
+if (process.argv.length > 2) {
+  // if this is called with more than just node and the script name, pass those to sayHello
+  var name = process.argv.slice(3).join(' ');
+} else {
+  name = '';
+}
 
 if (cmd.male) {
   sayHello('Mr. ' + name);
 }
-if (cmd.female) {
+else if (cmd.female) {
   sayHello('Ms. ' + name);
 }
-if (cmd.married) {
+else if (cmd.married) {
   sayHello('Mrs. ' + name);
 }
-if (cmd.nonbinary) {
+else if (cmd.nonbinary) {
   sayHello('Mx. ' + name);
 }
-if (cmd.individual) {
+else if (cmd.individual) {
   sayHello('Ind. ' + name);
 }
-if (cmd.yo) {
+else if (cmd.yo) {
   sayHello('Yo ' + name);
+}
+else {
+  sayHello(name);
 }
