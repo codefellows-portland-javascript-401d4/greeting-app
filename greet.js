@@ -1,9 +1,7 @@
-var greet = function() {
-    var name = process.argv.pop();
-    console.log('name is ' + name);
-    console.log('hello ' + name);
-    return 'hello ' + name;
+var greet = function(name) {
     
+    return 'hello ' + name;
 };
-// greet();
+console.log(greet(process.argv[2]));
 module.exports = greet;
+
