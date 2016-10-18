@@ -1,6 +1,8 @@
 function greet(name) {
   var givenName;
   var ending;
+  var commandLineName;
+
   if (name && name !== 'Tim') {
     givenName = name;
     ending = ', how you doing?';
@@ -16,4 +18,8 @@ function greet(name) {
   return greeting;
 }
 
+if (require.main === module) {
+  commandLineName = process.argv.pop();
+  console.log(greet(commandLineName));
+}
 module.exports = greet;
