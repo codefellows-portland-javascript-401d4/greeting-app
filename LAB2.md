@@ -33,4 +33,4 @@ Add to core library and cli:
 * Code Organization and Quality: 3pts
 * package.json: 2pts
 * npm scripts: 2pts
-* changelog/semver: 3pts
+* module design: 3pts
