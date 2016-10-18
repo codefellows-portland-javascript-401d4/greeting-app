@@ -6,17 +6,31 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- added Mocha and Chai as developer dependencies to allow for running tests.
-- tests to ensure the titles work properly.
 
+## [1.2.0] - 2016-10-18
+### Release
+- Greeter now takes optional titles as command-line arguments.
+
+## [1.1.3] - 2016-10-18
+### Added
+- Test for command line title flags now pass.
+
+## [1.1.2] - 2016-10-18
+### Changed
+- Moved the testing content to match the new file structure of the project.
+
+## [1.1.1] - 2016-10-18
+### Added
+- Mocha and Chai as developer dependencies to allow for running tests.
+- Tests to ensure the titles work properly.
 
 ## [1.1.0] - 2016-10-18
-## Added
-- adding commander package to enable use of command-line flags.
+### Added
+- Commander package to enable use of command-line flags.
 - Program now has trans-friendly salutations!
 
 ## [1.0.1] - 2016-10-18
-## Added
+### Added
 - Added this changelog.
 - Added a package.json and build instructions for the package.
 
@@ -30,7 +44,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.1.4] - 2016-10-17
 ### Added
-- Added a test to greeter.test.js for testing command line input. All tests pass.
+- A test to greeter.test.js for testing command line input. All tests pass.
 
 ## [0.1.3] - 2016-10-17
 ### Changed
@@ -43,7 +57,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.1.1] - 2016-10-17
 ### Added
-- Added a test file test_greeter.js to simulate input: passes for passed in and default behavior.
+- A test file test_greeter.js to simulate input: passes for passed in and default behavior.
 
 ## [0.1.0] - 2016-10-17
 ### Added
@@ -53,7 +67,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.0.2] - 2016-10-17
 ### Added
-- Added a linter to the project.
+- A linter to the project.
 
 ## [0.0.1] - 2016-10-17
 ### Forked
