@@ -8,14 +8,16 @@
   "env": {
     "browser": true,
     "jquery": true,
-    "node": true
+    "node": true,
+    "mocha": true,
+    "es6": true
   },
   "rules": {
     "semi": [2, "always"],
     "strict": 0,
-    "indent": [4, 4],
+    "indent": [2, 4],
     "eqeqeq": 1,
-    "quotes": [1, "single"],
+    "quotes": [2, "single"],
     "no-multi-spaces": [1, {
       "exceptions": {
         "VariableDeclarator": true,

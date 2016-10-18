@@ -1,0 +1,33 @@
+{
+  "name": "jpgothro-greeting-app",
+  "version": "1.0.0",
+  "description": "Day 2 Greeting app lab.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "node-emoji": "^1.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "npm run test:run",
+    "test:run": "mocha",
+    "test:watch": "npm run test:run -- -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPGothro/greeting-app.git"
+  },
+  "author": "@jpgothro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPGothro/greeting-app/issues"
+  },
+  "homepage": "https://github.com/JPGothro/greeting-app#readme"
+}
