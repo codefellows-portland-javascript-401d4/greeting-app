@@ -4,7 +4,7 @@ var cmd = require('commander');
 var sayHello = require('./greeter');
 
 cmd
-  .version('1.0.1')
+  .version('1.2.0')
   .option('-m, --male', 'Mr.')
   .option('-f, --female', 'Ms.')
   .option('-M, --married', 'Mrs.')
@@ -15,28 +15,34 @@ cmd
 
 if (process.argv.length > 2) {
   // if this is called with more than just node and the script name, pass those to sayHello
-  var name = process.argv.slice(3).join(' ');
+  var name = process.argv[process.argv.length - 1];
 } else {
   name = '';
 }
 
 if (cmd.male) {
   sayHello('Mr. ' + name);
+  return ('Mr.');
 }
 else if (cmd.female) {
   sayHello('Ms. ' + name);
+  return ('Ms.');
 }
 else if (cmd.married) {
   sayHello('Mrs. ' + name);
+  return ('Mrs.');
 }
 else if (cmd.nonbinary) {
   sayHello('Mx. ' + name);
+  return ('Mx.');
 }
 else if (cmd.individual) {
   sayHello('Ind. ' + name);
+  return ('Ind.');
 }
 else if (cmd.yo) {
   sayHello('Yo ' + name);
+  return ('Ind.');
 }
 else {
   sayHello(name);
