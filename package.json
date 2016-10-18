@@ -1,0 +1,31 @@
+{
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "description": "logs a greeting when user inputs a name",
+  "main": "/lib/greet.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "mocha",
+    "lint": "eslint **/*",
+    "watch": "npm run test -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timcombs/greeting-app.git"
+  },
+  "author": "tim combs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timcombs/greeting-app/issues"
+  },
+  "homepage": "https://github.com/timcombs/greeting-app#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2",
+    "travis-ci": "^2.1.1"
+  },
+  "dependencies": {
+    "ascii-art": "^1.1.1"
+  }
+}

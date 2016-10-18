@@ -1,5 +1,6 @@
 var assert = require('assert');
-var greet = require('./greet');
+var greet = require('../lib/greet');
+var chai = require('chai');
 //for the command line bonus
 var es = require('child_process').execSync;
 
@@ -20,9 +21,15 @@ describe('greeter', function() {
   });
 
   it('greets from command line', function() {
-    var greeting = es('node greet.js Bob', {
+    var greeting = es('node lib/greet.js Bob', {
       encoding: 'utf-8'
     }).trim();
     assert.equal(greeting, 'Hello Bob, how you doing?');
   });
+
+  // compute time at greeting call
+  // display time after greeting
+  // display the time as ascii art
+
+
 });
