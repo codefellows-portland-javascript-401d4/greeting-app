@@ -6,8 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- adding commander package to enable use of command-line flags
+- tests to ensure the titles work properly.
 
+## [1.1.0] - 2016-10-18
+## Added
+- adding commander package to enable use of command-line flags.
+- Program now has trans-friendly salutations!
+
+## [1.0.1] - 2016-10-18
+## Added
+- Added this changelog.
+- Added a package.json and build instructions for the package.
 
 ## [1.0.0] - 2016-10-18
 ### Release
