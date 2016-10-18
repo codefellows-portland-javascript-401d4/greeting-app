@@ -1,0 +1,19 @@
+{
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "description": "This is a greeting app",
+  "main": "greeting_app.js",
+  "scripts": {
+    "test": "Mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrewStock/greeting-app.git"
+  },
+  "author": "Drew Stock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrewStock/greeting-app/issues"
+  },
+  "homepage": "https://github.com/DrewStock/greeting-app#readme"
+}
