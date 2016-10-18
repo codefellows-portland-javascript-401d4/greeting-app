@@ -9,10 +9,18 @@
     "parserOptions": {
         "sourceType": "module"
     },
+    "globals": {
+        "describe": false,
+        "it": false,
+        "beforeEach": false,
+        "afterEach": false,
+        "before": false,
+        "after": false
+    },
     "rules": {
         "indent": [
             "error",
-            "spaces"
+            2
         ],
         "linebreak-style": [
             "error",
