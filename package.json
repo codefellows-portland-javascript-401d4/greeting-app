@@ -5,7 +5,7 @@
   "main": "/lib/greet.js",
   "scripts": {
     "pretest": "npm run lint",
-    "test": "mpm run plainTest",
+    "test": "npm run plainTest",
     "plainTest": "mocha",
     "lint": "eslint ./",
     "watch": "npm run plainTest -- -w"
