@@ -5,9 +5,10 @@
   "main": "/lib/greet.js",
   "scripts": {
     "pretest": "npm run lint",
-    "test": "mocha",
+    "test": "plainTest",
+    "plainTest": "mocha",
     "lint": "eslint **/*",
-    "watch": "npm run test -- -w"
+    "watch": "npm run plainTest -- -w"
   },
   "repository": {
     "type": "git",
