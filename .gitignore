@@ -1,0 +1,13 @@
+# Logs
+logs
+
+*.log
+
+# Secrets
+
+
+# Dependency directory
+
+
+IDE
+.idea
