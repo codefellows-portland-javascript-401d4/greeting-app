@@ -1,3 +1,3 @@
-var greet = require('./greet');
+var greet = require('./lib/greet');
 
-console.log(greet(process.argv[2]));  
+greet(process.argv[2]);  
