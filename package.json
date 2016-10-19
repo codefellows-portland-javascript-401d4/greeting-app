@@ -2,10 +2,11 @@
   "name": "greeting-app",
   "version": "1.0.0",
   "description": "This is a greeting app",
-  "main": "greeting_app.js",
+  "main": "index.js",
   "scripts": {
+    "pretest": "npm run lint",
     "test": "npm run test:run",
-    "test:run": "Mocha",
+    "test:run": "mocha",
     "test:watch": "npm run test:run -- -w",
     "lint": "eslint ."
   },
