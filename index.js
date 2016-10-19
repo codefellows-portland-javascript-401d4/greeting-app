@@ -1,2 +1,2 @@
-var greet = require('./greet');
+var greet = require('../greet');
     console.log(greet);

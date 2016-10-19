@@ -4,13 +4,11 @@
   "description": "build-tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "pretest": "npm run lint",
     "test": "npm run test:run",
-    "test:run": "mocha -R nyan",
+    "test:run": "mocha -R list",
     "test:watch": "npm run test:run -- -w",
-    "test": "eslint ."
-
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -28,6 +26,7 @@
     "mocha": "^3.1.2"
   },
   "dependencies": {
-    "node-emoji": "^1.4.1"
+    "node-emoji": "^1.4.1",
+    "prompt": "^1.0.0"
   }
 }
