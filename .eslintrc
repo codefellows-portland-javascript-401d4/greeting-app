@@ -1,0 +1,27 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "jquery": true,
+        "node": true
+    },
+    "rules": {
+        "semi":2,
+        "strict": 0,
+        "indent": [2,2],
+        "quotes": [1,"single"],
+        "no-multi-spaces": [1, {
+            "expectations": {
+                "VariableDeclarator": true,
+                "FunctionExpression": true
+            }
+        }],
+    "no-underscore-dangle":0
+    }
+}
