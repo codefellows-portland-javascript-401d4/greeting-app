@@ -1,0 +1,33 @@
+{
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "description": "build-tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run lint",
+    "test": "npm run test:run",
+    "test:run": "mocha -R nyan",
+    "test:watch": "npm run test:run -- -w",
+    "test": "eslint ."
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizutombo/greeting-app.git"
+  },
+  "author": "Tom Shultz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizutombo/greeting-app/issues"
+  },
+  "homepage": "https://github.com/mizutombo/greeting-app#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "node-emoji": "^1.4.1"
+  }
+}
