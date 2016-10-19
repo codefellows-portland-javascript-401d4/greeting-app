@@ -1,6 +1,6 @@
 'use strict';
 
-var greeting = require('./app');
+var greeting = require('./prolModule.js');
 
 var input = process.argv[2];
 

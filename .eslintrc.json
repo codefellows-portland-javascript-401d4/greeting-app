@@ -26,7 +26,13 @@
             "always"
         ],
         "no-console": 0,
-        "space-infix-ops": ["error", {"int32Hint": false}],
-        "no-trailing-spaces": ["error", { "skipBlankLines": true }]
+        "space-infix-ops": [
+            "error",
+            {"int32Hint": false}
+        ],
+        "no-trailing-spaces": [
+            "error",
+            { "skipBlankLines": true }
+        ]
     }
 }
