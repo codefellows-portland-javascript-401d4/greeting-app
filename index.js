@@ -1,3 +1,3 @@
 var greet = require('./lib/greet');
 
-greet(process.argv[2]);  
+console.log(greet(process.argv[2]));  

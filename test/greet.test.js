@@ -9,12 +9,20 @@ describe('greeter', function() {
     var greeting = greet('tester');
     //use the assert module to test
     //will throw error for us if not true
+<<<<<<< HEAD
     assert.equal(greeting, 'Hello tester.  ');
+=======
+    assert.match(greeting, /^Hello tester\.  Today is/g);
+>>>>>>> txtincFiglet
   });
 
   it('greets with "friend" when no name given', function() {
     var greeting = greet();
+<<<<<<< HEAD
     assert.equal(greeting, 'Hello friend.  ');
+=======
+    assert.match(greeting, /^Hello friend\.  Today is/g);
+>>>>>>> txtincFiglet
   });
 });
 
