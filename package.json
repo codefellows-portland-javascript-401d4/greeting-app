@@ -1,0 +1,27 @@
+{
+  "name": "txtincorporated",
+  "version": "1.0.0",
+  "description": "this is my very first build",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txtincorporated/greeting-app.git"
+  },
+  "author": "Nathan Keene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/txtincorporated/greeting-app/issues"
+  },
+  "homepage": "https://github.com/txtincorporated/greeting-app#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "figlet": "^1.2.0"
+  }
+}
