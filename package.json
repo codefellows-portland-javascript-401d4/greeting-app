@@ -7,7 +7,7 @@
     "pretest": "npm run lint",
     "lint": "eslint *.js",
     "test": "mocha",
-    "watch": "mocha -w",
+    "watch": "mocha -w *.js",
     "start": "node index.js"
   },
   "repository": {
