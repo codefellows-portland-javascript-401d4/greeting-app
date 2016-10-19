@@ -7,7 +7,7 @@
     "pretest": "npm run lint",
     "test": "plainTest",
     "plainTest": "mocha",
-    "lint": "eslint .",
+    "lint": "eslint ./",
     "watch": "npm run plainTest -- -w"
   },
   "repository": {
