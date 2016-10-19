@@ -1,0 +1,29 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "greeting app dependencies",
+  "main": "app.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "mocha -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjfreem1/greeting-app.git"
+  },
+  "author": "mjfreem1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjfreem1/greeting-app/issues"
+  },
+  "homepage": "https://github.com/mjfreem1/greeting-app#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "cyrillic-to-latin": "^2.0.0"
+  }
+}
