@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 
+## [1.2.1] - 2016-10-18
+### Added
+- A travis.myl file to have auto-checking on github.
+
 ## [1.2.0] - 2016-10-18
 ### Release
 - Greeter now takes optional titles as command-line arguments.
