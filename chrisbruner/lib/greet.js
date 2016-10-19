@@ -40,7 +40,7 @@ function greet(name) {
         if (name.match(nameRegex)) {
             return emoji.emojify('Yo Chris! What up buddy? Have you had your coffee today? :coffee:');
         } else {
-            return 'hello ' + name;
+            return emoji.emojify('hello ' + name + ' :coffee:');
         };
     } else if (Array.isArray(name)) {
         return greetNameArray(name);

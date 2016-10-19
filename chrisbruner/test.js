@@ -11,7 +11,7 @@ describe('greeter', function() {
         var greeting = greet('tester');
         //user the assert module to test
         //will throw error for us if not tester
-        assert.equal( greeting, 'hello tester');
+        assert.equal( greeting, emoji.emojify('hello tester :coffee:'));
     });
 
     it('greets with "friend" when no name given', function() {
@@ -37,7 +37,7 @@ describe('greeter', function() {
 
     it('this will check the first prompt', function() {
         var check = esync('node ./lib/greet.js "Jane Doe"', {encoding:'utf-8'});
-        assert.equal(check, 'hello Jane Doe\nHow are you?');
+        assert.equal(check, emoji.emojify('hello Jane Doe :coffee:\nHow are you?'));
     });
 
     it('this will check your input after the initial prompt', function(done) {
@@ -46,18 +46,16 @@ describe('greeter', function() {
         child.stdout.on('data', function(data) {
             if(loopCounter === 0) {
                 loopCounter += 1;
-                assert.equal(data, 'hello Jane Doe\n');
+                assert.equal(data, emoji.emojify('hello Jane Doe :coffee:\n'));
             } else if (loopCounter === 1) {
                 loopCounter += 1;
                 assert.equal(data, 'How are you?');
                 child.stdin.write('crappy\n');
-            } else if (loopCounter === 2) {
+            } else {
                 loopCounter += 1;
                 assert.equal(data, 'I see, you\'re feeling crappy. Just so you know, I think you\'re awesome.\n');
                 done();
-            } else {
-                done();
-            }
+            }; 
         });
     });
 });
