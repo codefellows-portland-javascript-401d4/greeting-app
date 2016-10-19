@@ -25,40 +25,35 @@ describe('greeter', function() {
     assert.equal(greeting, 'Hello yetanothername, how you doing?');
   });
 
-  it('greets using name', function() {
-    var greeting = greet('tester');
-    assert.equal(greeting, 'Hello tester, how you doing?');
+  it('greeting if greets using name', function() {
+    var fullGreeting = greet('tester');
+    var currentGreeting = fullGreeting.greeting;
+    assert.equal(currentGreeting, 'Hello tester, how you doing?');
   });
 
   it('greets using "friend" when no name given', function() {
-    var greeting = greet();
-    assert.equal(greeting, 'Hello friend, how you doing?');
+    var fullGreeting = greet();
+    var currentGreeting = fullGreeting.greeting;
+    assert.equal(currentGreeting, 'Hello friend, how you doing?');
   });
 
   it('greets using Tim', function() {
-    var greeting = greet('Tim');
-    assert.equal(greeting, 'Hello Tim, you rock!!');
+    var fullGreeting = greet('Tim');
+    var currentGreeting = fullGreeting.greeting;
+    assert.equal(currentGreeting, 'Hello Tim, you rock!!');
   });
 
   it('greets from command line', function() {
     var greeting = es('node lib/greet.js Bob', {
       encoding: 'utf-8'
     }).trim();
-    assert.equal(greeting, 'Hello Bob, how you doing?');
+    var greetingArray = greeting.split(/\n/);
+    assert.equal(greetingArray[0], 'Hello Bob, how you doing?');
+    assert.match(greetingArray[1], /^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)/g, 'currentDay passes the regexp');
+    assert.match(greetingArray[2], /^([1-9]|1[0-2]):([0-5]\d)\s?(AM|PM)?$/i);
   });
 
-  it('gets the current time with am/pm', function() {
-    var timeOfGreeting = new Date();
-    assert()
+  it('turn date time into ascii dancers', function() {
+    //not sure how to write a test for this
   });
-
-  it('turn name/friend into ascii art', function() {
-
-  });
-
-  // compute time at greeting call
-  // display time after greeting
-  // display the time as ascii art
-
-
 });
