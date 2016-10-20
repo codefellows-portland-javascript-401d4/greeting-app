@@ -1,9 +1,11 @@
-var greet = function() {
-    var name = process.argv.pop();
-    console.log('name is ' + name);
-    console.log('hello ' + name);
-    return 'hello ' + name;
+var emoji = require('node-emoji');
+
+
+var greet = function(name, emoji) {
     
+  return 'hello ' + name + ' ' + emoji;
 };
-// greet();
+
 module.exports = greet;
+
+console.log(greet(process.argv[2], emoji.get(process.argv.pop())));
