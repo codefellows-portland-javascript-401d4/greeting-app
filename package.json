@@ -1,10 +1,11 @@
 {
-  "name": "lab-02-build-tools",
+  "name": "greeting-app",
   "version": "1.0.0",
   "description": "Lab 02: Build Tools",
   "main": "index.js",
   "scripts": {
     "pretest": "npm run lint",
+    "test": "npm run test:run",
     "test:run": "mocha",
     "test:watch": "npm run test:run -- -w",
     "lint": "eslint ."
