@@ -4,6 +4,11 @@
 ## Description:
 
 This work is to be done as a continuation of your fork of the `greeting-app` assignment.
+<<<<<<< HEAD
+=======
+
+__Before coding this lab, first create version `1.0.0` and commit so you have a baseline for CHANGELOG.md__
+>>>>>>> 5f1881eb1737be5d2878f0c83e42583c2845ba60
  
 For this assignment you will add the following:
   * Dependency tracking via npm and package.json. 
@@ -12,6 +17,13 @@ For this assignment you will add the following:
     * Add at least one new option to the greet function
     * Add tests for new functionality
   * Automated build and development environent via npm scripts
+<<<<<<< HEAD
+=======
+  * changelog and semver "history":
+    * the version from the previous lab is `v1.0.0`
+    * break the work above into _at least_ 3 "releases"
+    * Properly increment the semver according to the change in each "release"
+>>>>>>> 5f1881eb1737be5d2878f0c83e42583c2845ba60
 
 The package.json file should include:
   * all the dependencies and dev devdependencies for the project.
@@ -33,4 +45,8 @@ Add to core library and cli:
 * Code Organization and Quality: 3pts
 * package.json: 2pts
 * npm scripts: 2pts
+<<<<<<< HEAD
 * module design: 3pts
+=======
+* changelog/semver: 3pts
+>>>>>>> 5f1881eb1737be5d2878f0c83e42583c2845ba60
