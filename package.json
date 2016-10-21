@@ -1,0 +1,24 @@
+{
+  "name": "chrisbruner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R nyan",
+    "test:watch": "mocha -R nyan -w",
+    "lint": "eslint ./",
+    "linttest": "eslint ./ && mocha -R nyan"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "figlet": "^1.2.0",
+    "node-emoji": "^1.4.1"
+  }
+}
