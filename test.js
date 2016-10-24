@@ -24,7 +24,7 @@ describe('greeter', function() {
       encoding:'utf-8'
     }).toLowerCase();
     var whitespace = /\s/g;
-    console.log(greeting.split(whitespace));
+    // console.log(greeting.split(whitespace));
     assert.equal(greeting.split(whitespace).includes('cats'), true);
   });
 });
