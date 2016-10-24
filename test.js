@@ -64,7 +64,7 @@ describe('parting', function() {
     it('this should test the most basic parting phrase', function() {
         var part = parting('Chris');
         assert.equal(part, 'see you Chris');
-    })
+    });
 });
 
 describe('some other functionality', function() {
