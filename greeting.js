@@ -1,8 +1,10 @@
+var catFacts = require('cat-facts');
+
 function greet() {
   var name = process.argv.pop();
-  console.log('hello, ', name);
+  console.log('Hello,', name,'.', 'Today\'s fun fact is:',catFacts.random(),'.');
   process.argv.push(name);
-  return('hello,' + name);
+  return('Hello,', name,'.', 'Today\'s fun fact is:', catFacts.random(),'.');
 }
 
 greet();
