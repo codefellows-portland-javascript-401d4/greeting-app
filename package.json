@@ -8,7 +8,7 @@
     "test": "npm run test:run",
     "test:run": "mocha -R list",
     "test:watch": "npm run test:run -- -w",
-    "lint": "eslint"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
