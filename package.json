@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "npm run lint",
     "test": "npm run test:run",
-    "test:run": "mocha -R list",
+    "test:run": "mocha",
     "test:watch": "npm run test:run -- -w",
     "lint": "eslint"
   },
