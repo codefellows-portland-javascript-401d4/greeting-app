@@ -1,15 +1,16 @@
-var assert = require('assert');
-var greet = require('./greet');
+var assert = require('chai').assert;
+var greet = require('../greet');
 
-it('greets user by name', function() {
-    var greeting = greet('name');
-    assert.equal(greeting, 'Howdy user');
+it('greets user by name with a randomly-generated greeting', function() {
+    var greeting = greet('Caitlin');
+    assert.equal(greeting, `${greeting}`);
 });
 
-it('greets user with a randomly-generated greeting', function() {
-    assert.equal();
+it('greets with "User" if name is not given', function() {
+    var greetingBasic = greet();
+    assert.equal(greetingBasic, `${greetingBasic}`);
 });
 
-it('displays a dog ascii face after greeting user', function() {
+it.skip('displays a dog ascii face after greeting user', function() {
     assert.equal();
 });

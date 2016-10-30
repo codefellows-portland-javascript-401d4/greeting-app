@@ -1,16 +1,16 @@
 'use strict';
 
-const randomGreet = require('random-greetings');
+const random = require('random-greetings');
 const dogs = require('dog-ascii-faces');
 
 function greet(name) {
-    var greeting = randomGreet.greet();
-    var name = name || 'friend';
-    var completeGreet = `${greeting}, ${name}! \n`;
+    var greeting = random.greet().toLowerCase();
+    var name = name || 'User';
+    var completeGreet = `${name}, ${greeting}! \n`;
 
     return (completeGreet);
 }
 
-console.log(greet(process.argv[2]) + 'Here is a cute dog face for you:', dogs());
+console.log(greet(process.argv[2]) + dogs());
 
 module.exports = greet;
