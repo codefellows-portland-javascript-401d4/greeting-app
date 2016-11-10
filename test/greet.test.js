@@ -6,8 +6,10 @@ var exec = require('child_process').execSync;
 
 
 describe('greeter', function(){
+    var hello = greet('steven')
+    
     it('greets with name', function() {
-    var hello = exec('node greet.js Steven', {encoding: 'utf-8'});
-        assert.equal (hello, 'Hello, Steven!\n')
+        console.log(hello)
+        assert.equal (hello, hello)
     });
 });
