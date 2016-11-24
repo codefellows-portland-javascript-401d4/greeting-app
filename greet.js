@@ -1,13 +1,11 @@
 const emoji = require('node-emoji');
-const prompt = require('prompt');
 
 function greet(name) {
-  prompt.start();
-  var name = prompt.get('What is your name?'); // eslint-disable-line
-  name = name || 'mon ami';
+
+  name = name || null;
   if (name != null) {
     return 'Bonjour, ' + name + '. ' + emoji.emojify('I :heart: :coffee:');
-  }   else {
+  } else {
     return 'Bonjour, mon ami. ' + emoji.get('flag-fr');
   }
 }
