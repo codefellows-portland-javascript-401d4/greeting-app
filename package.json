@@ -1,0 +1,29 @@
+{
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "main": "test.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "npm run test:run",
+    "test:run": "mocha -R nyan",
+    "test:watch": "npm run test:run -- -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risafletcher/greeting-app.git"
+  },
+  "author": "Risa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/risafletcher/greeting-app/issues"
+  },
+  "homepage": "https://github.com/risafletcher/greeting-app#readme",
+  "dependencies": {
+    "cat-facts": "^1.0.2",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
