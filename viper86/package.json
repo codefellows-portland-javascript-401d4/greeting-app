@@ -1,0 +1,31 @@
+{
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "npm run test:run",
+    "lint": "eslint .",
+    "test:run": "mocha",
+    "test:watch": "npm run test:run -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viper86/greeting-app.git"
+  },
+  "author": "Tyler Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viper86/greeting-app/issues"
+  },
+  "homepage": "https://github.com/viper86/greeting-app#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "pokemon-gif": "^1.0.9"
+  }
+}
