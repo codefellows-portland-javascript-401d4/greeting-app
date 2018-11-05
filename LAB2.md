@@ -1,8 +1,8 @@
-![cf](http://i.imgur.com/7v5ASc8.png)  Lab 02: Build Tools
-===
+Lab 02: Build Tools
 
-## Description:
+Description:
 
+<<<<<<< HEAD
 This work is to be done as a continuation of your fork of the `greeting-app` assignment.
  
 For this assignment you will add the following:
@@ -12,25 +12,56 @@ For this assignment you will add the following:
     * Add at least one new option to the greet function
     * Add tests for new functionality
   * Automated build and development environent via npm scripts
+=======
+This work is to be done as a continuation of your fork of the greeting-app assignment.
 
+For this assignment you will add the following:
+>>>>>>> 3153b14b8b3d33d71dfa9214fa18fb232a4cd3f4
+
+Dependency tracking via npm and package.json.
+Enhance your greeting features.
+Use at least one third-party npm library, example: add icon/art/emoji greeting
+Add at least one new option to the greet function
+Add tests for new functionality
+Automated build and development environent via npm scripts
 The package.json file should include:
-  * all the dependencies and dev devdependencies for the project.
-  * npm scripts (ex: test, build, watch, dev, start)
 
+all the dependencies and dev devdependencies for the project.
+npm scripts (ex: test, build, watch, dev, start)
 The npm scripts should address:
+<<<<<<< HEAD
   * run tests
   * run eslint
   * run lint and testing
   * watch functionality (only watches .js files) to run testing
+=======
+>>>>>>> 3153b14b8b3d33d71dfa9214fa18fb232a4cd3f4
 
-## Bonus **3pts**  
+run tests
+run eslint
+run lint and testing
+watch functionality (only watches .js files) to run testing
+Bonus 3pts
+
 Add to core library and cli:
+<<<<<<< HEAD
 * solicit input and respond with second greeting that includes input.
 * Add appropriate system/integration and unit tests as appropriate. 
+=======
+>>>>>>> 3153b14b8b3d33d71dfa9214fa18fb232a4cd3f4
 
-## Rubric:
+solicit input and respond with second greeting that includes input.
+Add appropriate system/integration and unit tests as appropriate.
+Rubric:
 
+<<<<<<< HEAD
 * Code Organization and Quality: 3pts
 * package.json: 2pts
 * npm scripts: 2pts
 * module design: 3pts
+=======
+Code Organization and Quality: 3pts
+package.json: 2pts
+npm scripts: 2pts
+module design: 3pts
+>>>>>>> 3153b14b8b3d33d71dfa9214fa18fb232a4cd3f4
