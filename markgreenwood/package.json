@@ -1,0 +1,33 @@
+{
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "description": "Greeting module that can be required as a module or run from the CLI",
+  "main": "greet.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "pretest": "npm run lint",
+    "test": "mocha",
+    "build": "npm install",
+    "dev": "npm install --save-dev",
+    "watch": "npm run test -- -w",
+    "start": "node lib/greet.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markgreenwood/greeting-app.git"
+  },
+  "author": "@markgreenwood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markgreenwood/greeting-app/issues"
+  },
+  "homepage": "https://github.com/markgreenwood/greeting-app#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "node-emoji": "^1.4.1"
+  }
+}
